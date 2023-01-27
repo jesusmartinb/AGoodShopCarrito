@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>agoodshop</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/92d719d9ae.js" crossorigin="anonymous"></script>
+	<!-- CDN Sweetalert -->
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="wrapper wrapper__header">
+			<div class="logo">
+				<h1 class="logo__title">agoodshop</h1>
+			</div>
+			<nav class="menu-navegacion">
+				<ul class="menu-navegacion__list">
+					<li class="menu-navegacion__list-item"><a class="list-item__link" href="#">Tienda</a></li>
+					<li class="menu-navegacion__list-item"><a class="list-item__link" href="#">Accesorios</a></li>
+					<li class="menu-navegacion__list-item"><a class="list-item__link" href="#">Soporte</a></li>
+					<li class="menu-navegacion__list-item"><a class="list-item__link active" href="#">Contactar</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<div class="wrapper">
+			<div id="img-carrito" class="img-carrito"><i class="fa-solid fa-cart-shopping"> <span class="contador-carrito" id="contador-carrito"> 0 </span></i> Mi Carrito</div>
+			<div class="products" id="products">
+				<div id="lista-productos" class="zona-productos">
+					<!-- Se añaden los productos dinámicamente -->
+				</div>
+				<section class="accesorios" id="accesorios">
+					<h2 class="accesorios__title title">Accesorios recomendados</h2>
+					<!-- Se añaden los accesorios dinámicamente -->
+				</section>
+			</div>
+			<section class="sorteo">
+				<div class="sorteo__participa">
+					<h2 class="sorteo__title title">Participa en el sorteo de un iFhone 13</h2>
+					<p class="sorteo__content">Este verano, ¡venimos cargados de premios! Así que antes de irte de vacaciones, ¡participa en nuestro sorteo! y podrás llevarte un regalo increíble como un nuevo iFhone 13</p>
+					<p class="sorteo__content">Rellena este formulario para ser uno de los afortunados.</p>
+				</div>
+				<div class="sorteo__form">
+					<form class="form" action="" method="post">
+						<div class="form__control">
+							<label class="form__label" for="firstname">Nombre</label>
+							<input class="form__input" type="text" name="firstname" id="firstname" placeholder="Ari Gold" required>
+						</div>
+						<div class="form__control">
+							<label class="form__label" for="email">Email</label>
+							<input class="form__input" type="email" name="email" id="email" placeholder="arigold@mga.com" required>
+						</div>
+						<div class="form__control">
+							<input class="form__btn btn btn--enviar" type="submit" value="Enviar">
+						</div>
+					</form>
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer class="footer">
+		<p class="footer__copy">&copy; agoodshop</p>
+	</footer>
+	<div class="carrito-compra modal" id="modal">
+		<div class="modal-carrito">
+			<div class="cabecera-carrito">
+				<p class="marca">agoodshop </p>
+				<span class="close" id="close">Cerrar X</span>
+			</div>
+			<div id="carrito" class="carrito">
+				<table id="lista-carrito" class="lista-carrito">
+					<thead>
+						<tr>
+							<th class="cabecera">Producto</th>
+							<th class="cabecera">Cantidad</th>
+							<th class="cabecera">Unidad</th>
+							<th class="cabecera">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Se completa dinámicamente mediante JavaScript -->
+					</tbody>
+				</table>
+				<table id="total" class="total">
+					<thead>
+						<tr>
+							<th class="cabecera-total">Total</th>
+							<th class="cabecera-total"></th>
+						</tr>
+					</thead>
+					<tbody class="tbody">
+						<!-- Se completa dinámicamente mediante JavaScript -->
+					</tbody>
+					<tfoot>
+						<tr class="tr-tfoot">
+							<td>TOTAL</td>
+							<td class="precio-total" id="precioTotal"><span class="total-euros">€</span></td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			<div class="botones">
+				<a href="#" id="vaciar-carrito" class="btn-carrito btn-carrito--red">Vaciar Carrito</a>
+				<a href="#" id="finalizar-pedido" class="btn-carrito btn-carrito--blue">Finalizar Pedido</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/mostrarProductos.js"></script>
+	<script src="js/openModal.js"></script>
+	<script src="js/Carrito.js"></script>
+	<script src="js/productosCarrito.js"></script>
+</body>
+
+</html>

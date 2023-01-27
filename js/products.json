@@ -1,0 +1,55 @@
+{
+	"currency": "€",
+	"products": [
+		{
+			"type": "Producto Principal",
+			"SKU": "0K3QOSOV4V",
+			"title": "iFhone 13 Pro",
+			"description": "iFhone 13: Tu nuevo superpoder. Nuestro sistema de cámara dual más avanzado. El chip que hace morder el polvo a la competencia. Un subidón de autonomía que vaya si notarás. Ceramic Shield, más duro que cualquier vidrio de smartphone. Pantalla Super Retina XDR de 6,1 pulgadas. Diseño robusto con bordes planos y resistente al agua.",
+			"offer": false,
+			"newproduct": false,
+			"price": "938.99",
+			"amount": 1
+		},
+		{
+			"type": "Accesorio",
+			"SKU": "TGD5XORY1L",
+			"title": "Cargador",
+			"description": "El adaptador de corriente USB-C de 20W es muy rápido y eficiente, así que va de perlas para cargar tus dispositivos en cualquier lugar.",
+			"offer": false,
+			"newproduct": false,
+			"price": "49.99",
+			"amount": 1
+		},
+		{
+			"type": "Accesorio",
+			"SKU": "HPF5XORY1L",
+			"title": "Base de carga inalámbrica",
+			"description": "Sistema de soporte para que sigas usando tu smartphone cómodamente mientras lo cargas. Compatible con carga rápida de 20W.",
+			"offer": true,
+			"newproduct": false,
+			"price": "67.99",
+			"amount": 1
+		},
+		{
+			"type": "Accesorio",
+			"SKU": "IOKW9BQ9F3",
+			"title": "Funda de piel",
+			"description": "Fabricadas en piel europea curtida y teñida con un proceso especial, son suaves al tacto y adquieren un tono natural con el tiempo. Los botones de aluminio combinan a la perfección con el acabado de la piel.",
+			"offer": false,
+			"newproduct": false,
+			"price": "79.99",
+			"amount": 1
+		},
+		{
+			"type": "Accesorio",
+			"SKU": "TGD5XOKW7L",
+			"title": "Cargador",
+			"description": "El nuevo adaptador de corriente USB-C de 20W es muy rápido y eficiente, así que va de perlas para cargar tus dispositivos en cualquier lugar.",
+			"offer": false,
+			"newproduct": true,
+			"price": "54.99",
+			"amount": 1
+		}
+	]
+}
