@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	function closeCarrito() {
 		modal.classList.remove('show-modal');
+		location.reload();
 	}
 })
 

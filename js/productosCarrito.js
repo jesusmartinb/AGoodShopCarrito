@@ -54,8 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
 				// Actualizamos el total del carrito
 				actualizarTotalesCarrito(articulosCarrito);
 
-				location.reload();
-
 			}
 		})
 
